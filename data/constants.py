@@ -1,0 +1,12 @@
+ADMINS_ID = [653391824, 5008027433]
+NEWS_CHANNEL = '@allsavernews'
+
+AD_CHANNEL_ID = -1001153271591
+AD_CHANNEL_LINK = 'https://t.me/KamronMediaAds/'
+
+STATS_GROUP_ID = -1001555191664
+AD_STATS_GROUP_ID = -630572075
+
+BOT_USERNAME = '@recognizebot'
+
+LIST_LANG_CODES = ['ru', 'en', 'uz']
