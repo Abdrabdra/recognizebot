@@ -16,6 +16,12 @@ files_id = redis.StrictRedis(host='localhost', port=6379, db=2)
 users_db = redis.StrictRedis(host='localhost', port=6379, db=3)
 active_users = redis.StrictRedis(host='localhost', port=6379, db=4)
 
+with open("./@memsoundsbot all users id.csv") as f:
+    csvfilereader = csv.reader(f)
+
+    for user in csvfilereader:
+        users_db.set(user[0], json.dumps(USER_FIRST_INFO))
+
 
 class AdminSendEveryOne(StatesGroup):
     ask_lang = State()

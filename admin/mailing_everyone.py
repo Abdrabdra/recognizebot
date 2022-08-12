@@ -34,7 +34,7 @@ async def admin_ask_lang(message: Message, state: FSMContext):
     admin_message = message.text
 
     await state.update_data(users_lang=admin_message)
-    await bot.send_message(chat_id, 'Перешлите пост для рассылки с @KamronMediaAds.', reply_markup=reject_markup)
+    await bot.send_message(chat_id, 'Перешлите пост для рассылки с @DeaDMediaAds.', reply_markup=reject_markup)
     await AdminSendEveryOne.ask_post.set()
 
 
